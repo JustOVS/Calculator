@@ -191,6 +191,7 @@
             this.multiplicate.TabIndex = 12;
             this.multiplicate.Text = "*";
             this.multiplicate.UseVisualStyleBackColor = true;
+            this.multiplicate.Click += new System.EventHandler(this.multiplicate_Click);
             // 
             // add
             // 
@@ -201,6 +202,7 @@
             this.add.TabIndex = 13;
             this.add.Text = "+";
             this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // result
             // 
@@ -211,6 +213,7 @@
             this.result.TabIndex = 14;
             this.result.Text = "=";
             this.result.UseVisualStyleBackColor = true;
+            this.result.Click += new System.EventHandler(this.result_Click);
             // 
             // subtract
             // 
@@ -221,6 +224,7 @@
             this.subtract.TabIndex = 15;
             this.subtract.Text = "-";
             this.subtract.UseVisualStyleBackColor = true;
+            this.subtract.Click += new System.EventHandler(this.subtract_Click);
             // 
             // clearEntry
             // 
@@ -231,6 +235,7 @@
             this.clearEntry.TabIndex = 16;
             this.clearEntry.Text = "CE";
             this.clearEntry.UseVisualStyleBackColor = true;
+            this.clearEntry.Click += new System.EventHandler(this.clearEntry_Click);
             // 
             // divide
             // 
@@ -241,6 +246,7 @@
             this.divide.TabIndex = 17;
             this.divide.Text = "/";
             this.divide.UseVisualStyleBackColor = true;
+            this.divide.Click += new System.EventHandler(this.divide_Click);
             // 
             // clear
             // 
@@ -251,6 +257,7 @@
             this.clear.TabIndex = 18;
             this.clear.Text = "C";
             this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // board
             // 

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using System;
 
 namespace Calc
 {
@@ -11,6 +7,12 @@ namespace Calc
     {
         
         private static bool countForPoint = true;
+
+        public static double firstNumber;
+
+        //public static double secondNumber;
+
+        public static IOperator sign;
         public static void AddToBoard(string number, TextBox _board)
         {
             if (number == "0" && _board.Text == "0")
@@ -37,20 +39,21 @@ namespace Calc
 
         public static void swapSign(TextBox _board)
         {
-            if(_board.Text.Contains('-'))
+            if (_board.Text.Contains("-"))
             {
-                _board.Text = _board.Text.Substring(0);
+                _board.Text = _board.Text.Replace("-", "");
             }
             else
             {
                 _board.Text = _board.Text.Insert(0, "-");
             }
+        }
 
-
-
-
-
-
+        public static void Add(TextBox _board)
+        {
+            firstNumber = Convert.ToDouble(_board.Text);
+            _board.Text = "";
+            sign = new Adder();
         }
     }
 }

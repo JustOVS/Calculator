@@ -95,5 +95,40 @@ namespace Calc
             TextBox _board = board;
             Input.swapSign(_board);
         }
+
+        private void add_Click(object sender, EventArgs e)
+        {
+            Input.Add(board);
+        }
+
+        private void subtract_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void multiplicate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void divide_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void result_Click(object sender, EventArgs e)
+        {
+            Input.sign.DoMath(Input.firstNumber, board);
+        }
+
+        private void clearEntry_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

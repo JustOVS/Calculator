@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Calc
 {
-    interface IOperator
+    public interface IOperator
     {
-
+        void DoMath(double tmp, TextBox _board);
+        
     }
 }

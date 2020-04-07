@@ -10,8 +10,6 @@ namespace Calc
 
         public static double firstNumber = 0;
 
-        //public static double secondNumber;
-
         public static IOperator sign;
 
         public static bool operatorFlag = false;
@@ -118,6 +116,21 @@ namespace Calc
                     countForPoint = true;
                     operatorFlag = false;
             }
+        }
+        public static void Clear(TextBox _board)
+        {
+            ClearEntry(_board);
+
+            firstNumber = 0;
+
+            
+        }
+
+        public static void ClearEntry(TextBox _board)
+        {
+            _board.Text = "";
+            countForPoint = true;
+            operatorFlag = false;
         }
 
     }

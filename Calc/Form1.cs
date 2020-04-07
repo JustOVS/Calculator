@@ -131,7 +131,7 @@ namespace Calc
 
         private void clear_Click(object sender, EventArgs e)
         {
-
+            Input.Clear(board);
         }
     }
 }

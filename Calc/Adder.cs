@@ -12,6 +12,7 @@ namespace Calc
         {
             double result = tmp1 + Convert.ToDouble(_board.Text);
             _board.Text = result + "";
+            Input.firstNumber = 0;
         }
     }
 }

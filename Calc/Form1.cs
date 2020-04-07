@@ -118,7 +118,10 @@ namespace Calc
 
         private void result_Click(object sender, EventArgs e)
         {
-            Input.sign.DoMath(Input.firstNumber, board);
+            if (Input.operatorFlag == true && Input.firstNumber != 0)
+            {
+                Input.sign.DoMath(Input.firstNumber, board);
+            }
         }
 
         private void clearEntry_Click(object sender, EventArgs e)

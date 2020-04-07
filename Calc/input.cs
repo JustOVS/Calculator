@@ -8,7 +8,7 @@ namespace Calc
         
         public static bool countForPoint = true;
 
-        public static double firstNumber;
+        public static double firstNumber = 0;
 
         //public static double secondNumber;
 
@@ -60,6 +60,10 @@ namespace Calc
         {
             if (operatorFlag == true)
             {
+                if (firstNumber != 0)
+                {
+                    sign.DoMath(firstNumber, _board);
+                }
                 firstNumber = Convert.ToDouble(_board.Text);
                 _board.Text = "";
                 sign = new Adder();
@@ -70,8 +74,12 @@ namespace Calc
 
         public static void Subtract(TextBox _board)
         {
-            if (operatorFlag = true)
+            if (operatorFlag == true)
             {
+                if (firstNumber != 0)
+                {
+                    sign.DoMath(firstNumber, _board);
+                }
                 firstNumber = Convert.ToDouble(_board.Text);
                 _board.Text = "";
                 sign = new Subtractor();
@@ -82,8 +90,12 @@ namespace Calc
 
         public static void Divide(TextBox _board)
         {
-            if (operatorFlag = true)
+            if (operatorFlag == true)
             {
+                if (firstNumber != 0)
+                {
+                    sign.DoMath(firstNumber, _board);
+                }
                 firstNumber = Convert.ToDouble(_board.Text);
                 _board.Text = "";
                 sign = new Divider();
@@ -94,13 +106,17 @@ namespace Calc
 
         public static void Multiply(TextBox _board)
         {
-            if (operatorFlag = true)
+            if (operatorFlag == true)
             {
-                firstNumber = Convert.ToDouble(_board.Text);
-                _board.Text = "";
-                sign = new Multiplier();
-                countForPoint = true;
-                operatorFlag = false;
+                if (firstNumber != 0)
+                {
+                    sign.DoMath(firstNumber, _board);
+                }
+                    firstNumber = Convert.ToDouble(_board.Text);
+                    _board.Text = "";
+                    sign = new Multiplier();
+                    countForPoint = true;
+                    operatorFlag = false;
             }
         }
 

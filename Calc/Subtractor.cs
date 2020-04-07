@@ -11,10 +11,11 @@ namespace Calc
     {
         public void DoMath(double tmp1, TextBox _board)
         {
-             
-            double result = tmp1 - Convert.ToDouble(_board.Text);
-            _board.Text = result + "";
-            Input.firstNumber = 0;
+            
+                double result = tmp1 - Convert.ToDouble(_board.Text);
+                _board.Text = result + "";
+                Input.firstNumber = 0;
+      
         }
     }
 }

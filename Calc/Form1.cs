@@ -87,7 +87,7 @@ namespace Calc
         private void pointButton_Click(object sender, EventArgs e)
         {
             TextBox _board = board;
-            Input.AddToBoard(".", _board);
+            Input.AddToBoard(",", _board);
         }
 
         private void swapSign_Click(object sender, EventArgs e)
@@ -103,17 +103,17 @@ namespace Calc
 
         private void subtract_Click(object sender, EventArgs e)
         {
-
+            Input.Subtract(board);
         }
 
         private void multiplicate_Click(object sender, EventArgs e)
         {
-
+            Input.Multiply(board);
         }
 
         private void divide_Click(object sender, EventArgs e)
         {
-
+            Input.Divide(board);
         }
 
         private void result_Click(object sender, EventArgs e)

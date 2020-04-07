@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace Calc
 {
-    public class Adder : IOperator
+    public class Subtractor : IOperator
     {
         public void DoMath(double tmp1, TextBox _board)
         {
-            double result = tmp1 + Convert.ToDouble(_board.Text);
+             
+            double result = tmp1 - Convert.ToDouble(_board.Text);
             _board.Text = result + "";
             Input.firstNumber = 0;
-            
         }
     }
 }

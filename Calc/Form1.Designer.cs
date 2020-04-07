@@ -262,9 +262,9 @@
             // board
             // 
             this.board.Font = new System.Drawing.Font("Arial", 34F);
-            this.board.Location = new System.Drawing.Point(0, 42);
+            this.board.Location = new System.Drawing.Point(12, 44);
             this.board.Name = "board";
-            this.board.Size = new System.Drawing.Size(428, 60);
+            this.board.Size = new System.Drawing.Size(416, 60);
             this.board.TabIndex = 19;
             this.board.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -272,6 +272,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(192)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(440, 450);
             this.Controls.Add(this.board);
             this.Controls.Add(this.clear);

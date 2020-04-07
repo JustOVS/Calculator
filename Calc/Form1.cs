@@ -89,5 +89,11 @@ namespace Calc
             TextBox _board = board;
             Input.AddToBoard(".", _board);
         }
+
+        private void swapSign_Click(object sender, EventArgs e)
+        {
+            TextBox _board = board;
+            Input.swapSign(_board);
+        }
     }
 }

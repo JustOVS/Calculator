@@ -169,6 +169,7 @@
             this.swapSign.TabIndex = 10;
             this.swapSign.Text = "+/-";
             this.swapSign.UseVisualStyleBackColor = true;
+            this.swapSign.Click += new System.EventHandler(this.swapSign_Click);
             // 
             // pointButton
             // 

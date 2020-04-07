@@ -34,5 +34,23 @@ namespace Calc
                 }
             }
         }
+
+        public static void swapSign(TextBox _board)
+        {
+            if(_board.Text.Contains('-'))
+            {
+                _board.Text = _board.Text.Substring(0);
+            }
+            else
+            {
+                _board.Text = _board.Text.Insert(0, "-");
+            }
+
+
+
+
+
+
+        }
     }
 }

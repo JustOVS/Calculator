@@ -59,6 +59,7 @@
             this.number1.TabIndex = 0;
             this.number1.Text = "1";
             this.number1.UseVisualStyleBackColor = true;
+            this.number1.Click += new System.EventHandler(this.number1_click);
             // 
             // number2
             // 
@@ -69,6 +70,7 @@
             this.number2.TabIndex = 1;
             this.number2.Text = "2";
             this.number2.UseVisualStyleBackColor = true;
+            this.number2.Click += new System.EventHandler(this.number2_Click);
             // 
             // number3
             // 
@@ -79,6 +81,7 @@
             this.number3.TabIndex = 2;
             this.number3.Text = "3";
             this.number3.UseVisualStyleBackColor = true;
+            this.number3.Click += new System.EventHandler(this.number3_Click);
             // 
             // number4
             // 
@@ -89,6 +92,7 @@
             this.number4.TabIndex = 3;
             this.number4.Text = "4";
             this.number4.UseVisualStyleBackColor = true;
+            this.number4.Click += new System.EventHandler(this.number4_Click);
             // 
             // number5
             // 
@@ -99,7 +103,7 @@
             this.number5.TabIndex = 4;
             this.number5.Text = "5";
             this.number5.UseVisualStyleBackColor = true;
-            this.number5.Click += new System.EventHandler(this.button5_Click);
+            this.number5.Click += new System.EventHandler(this.number5_Click);
             // 
             // number6
             // 
@@ -110,7 +114,7 @@
             this.number6.TabIndex = 5;
             this.number6.Text = "6";
             this.number6.UseVisualStyleBackColor = true;
-            this.number6.Click += new System.EventHandler(this.button6_Click);
+            this.number6.Click += new System.EventHandler(this.number6_Click);
             // 
             // number7
             // 
@@ -121,6 +125,7 @@
             this.number7.TabIndex = 6;
             this.number7.Text = "7";
             this.number7.UseVisualStyleBackColor = true;
+            this.number7.Click += new System.EventHandler(this.number7_Click);
             // 
             // number8
             // 
@@ -131,6 +136,7 @@
             this.number8.TabIndex = 7;
             this.number8.Text = "8";
             this.number8.UseVisualStyleBackColor = true;
+            this.number8.Click += new System.EventHandler(this.number8_Click);
             // 
             // number9
             // 
@@ -141,6 +147,7 @@
             this.number9.TabIndex = 8;
             this.number9.Text = "9";
             this.number9.UseVisualStyleBackColor = true;
+            this.number9.Click += new System.EventHandler(this.number9_Click);
             // 
             // number0
             // 
@@ -151,6 +158,7 @@
             this.number0.TabIndex = 9;
             this.number0.Text = "0";
             this.number0.UseVisualStyleBackColor = true;
+            this.number0.Click += new System.EventHandler(this.number0_Click);
             // 
             // swapSign
             // 
@@ -171,6 +179,7 @@
             this.pointButton.TabIndex = 11;
             this.pointButton.Text = ".";
             this.pointButton.UseVisualStyleBackColor = true;
+            this.pointButton.Click += new System.EventHandler(this.pointButton_Click);
             // 
             // multiplicate
             // 
@@ -249,7 +258,7 @@
             this.board.Name = "board";
             this.board.Size = new System.Drawing.Size(428, 60);
             this.board.TabIndex = 19;
-            this.board.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.board.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
